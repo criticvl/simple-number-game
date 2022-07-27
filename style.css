@@ -1,0 +1,179 @@
+* {
+    font-family: monospace;
+    color: #252525;
+    user-select: none;
+}
+
+body {
+    background-color: #252525;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.div-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    aspect-ratio: 1;
+    width: 40vw;
+    border-radius: 0.5vw;
+    background-color: #7FFFD4;
+    padding: 1vw;
+}
+
+.div-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 30%;
+    padding-bottom: 12vw;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.header {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+    color: #252525;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-bottom: auto;
+}
+
+h2 {
+    font-size: 1.4vw;
+    padding: 0 1vw 0 1vw;
+    margin: 0 auto 0 auto;
+}
+
+label {
+    display: block;
+    font-size: 1vw;
+    text-align: center;
+    font-weight: bold;
+    height: min-content;
+    margin: auto;
+    padding-bottom: 0.1vw;
+}
+
+input {
+    cursor: pointer;
+    outline: none;
+    display: block;
+    aspect-ratio: 1;
+    width: 1vw;
+    padding: 0;
+    margin: auto;
+    height: min-content;
+    margin-left: 0.3vw;
+}
+
+.div-radio {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 0 auto;
+}
+
+.button-start {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 1.4vw;
+    margin: 0 auto 0 auto;
+    padding: 0.2vw;
+    aspect-ratio: 6;
+    width: 8vw;
+    border-radius: 0.25vw;
+    background-color: #252525;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.div-game {
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.div-option {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1vw;
+}
+
+.div-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    aspect-ratio: 1;
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+
+.div-win {
+    display: none;
+    margin: auto;
+    padding-bottom: 12vw;
+    font-size: 1.4vw;
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.card {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #b3b3f5;
+    font-size: 1.6vw;
+    aspect-ratio: 1;
+    text-align: center;
+    margin: auto;
+    border-radius: 0.2vw;
+    width: 96%;
+}
+
+.button-restart {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 1.4vw;
+    margin: 0;
+    padding: 0.2vw;
+    aspect-ratio: 6;
+    width: 8vw;
+    border-radius: 0.25vw;
+    background-color: #252525;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 1vw;
+}
+
+span {
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#stopwatch {
+    font-size: 0.9vw;
+    opacity: 0;
+    transition: opacity 1s linear;
+}

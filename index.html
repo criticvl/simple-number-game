@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./grid.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Remember Numbers</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="div-main">
+        <h1 class="header">
+          Remember Numbers
+          <div id="stopwatch">00:00</div>
+        </h1>
+
+        <div class="div-nav">
+          <h2>Choose Difficulty</h2>
+          <div class="div-radio">
+            <div class="div-option">
+              <label for="difficulty">Easy(4x4)</label>
+              <input type="radio" name="difficulty" value="4" />
+            </div>
+            <div class="div-option">
+              <label for="difficulty">Medium(6x6)</label>
+              <input
+                type="radio"
+                checked="checked"
+                name="difficulty"
+                value="6"
+              />
+            </div>
+            <div class="div-option">
+              <label for="difficulty">Hard(8x8)</label>
+              <input type="radio" name="difficulty" value="8" />
+            </div>
+          </div>
+          <button class="button-start">START</button>
+        </div>
+        <div class="div-game">
+          <div class="div-grid"></div>
+          <div class="div-win">
+            <h1>You Win!</h1>
+          </div>
+          <button class="button-restart">RESTART</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
